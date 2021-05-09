@@ -55,7 +55,8 @@ export default {
 
   generate: {
     routes: function() {
-      const posts = Object.keys(this.$store.state.posts).length;
+      // const posts = Object.keys(this.$store.state.posts).length;
+      const posts = 2; //posts:Number of data
       for (let i = 1; i <= posts; i++) {
         return {
           route: "po/" + i
