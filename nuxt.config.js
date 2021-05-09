@@ -54,14 +54,6 @@ export default {
   },
 
   generate: {
-    routes: function() {
-      // const posts = Object.keys(this.$store.state.posts).length;
-      const posts = 2; //posts:Number of data
-      for (let i = 1; i <= posts; i++) {
-        return {
-          route: "po/" + i
-        };
-      }
-    }
+    routes: ["po/1", "po/2", "po/3", "po/4", "po/5"]//Compromise Can't use [for, while...]
   }
 };
