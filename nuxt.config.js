@@ -45,5 +45,11 @@ export default {
 
   router: {
     base: "/homeApp/"
+  },
+
+  generate: {
+    routes: [
+      'po/3'
+    ]
   }
 };
