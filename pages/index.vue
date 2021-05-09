@@ -2,6 +2,8 @@
   <div class="container">
     <div>
       <Logo />
+      <NuxtLink to="pe">Go to [pe]</NuxtLink>
+      <NuxtLink to="po/3">Go to [po]</NuxtLink>
       <h1 class="title">
         homeAppooooooooooooooooooooo
       </h1>
@@ -28,7 +30,7 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
@@ -42,16 +44,8 @@ export default {}
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
