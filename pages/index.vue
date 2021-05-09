@@ -5,11 +5,13 @@
       <NuxtLink to="pe">Go to [pe]</NuxtLink>
       <NuxtLink to="po/3">Go to [po]</NuxtLink>
       <h1 class="title">
-        homeAppooooooooooooooooooooo
+        homeAppofffo
       </h1>
     </div>
     <div>
       {{ posts }}
+      <br>
+      <button @click="test()">test</button>
     </div>
   </div>
 </template>
@@ -20,6 +22,11 @@ export default {
     return {
       posts: this.$store.state.posts
     };
+  },
+  methods: {
+    test(){
+      console.log(Object.keys(this.posts).length)
+    }
   }
 };
 </script>

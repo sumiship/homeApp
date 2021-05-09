@@ -41,15 +41,26 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    babel: {
+      presets({ isServer }, [preset, options]) {
+        options.loose = true;
+      }
+    }
+  },
 
   router: {
     base: "/homeApp/"
   },
 
   generate: {
-    routes: [
-      'po/3'
-    ]
+    routes: function() {
+      const posts = Object.keys(this.$store.state.posts).length;
+      for (let i = 1; i <= posts; i++) {
+        return {
+          route: "po/" + i
+        };
+      }
+    }
   }
 };
