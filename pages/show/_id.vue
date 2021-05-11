@@ -1,7 +1,10 @@
 <template>
   <div>
-    <h1>po {{ id }}</h1>
-    <NuxtLink to="/">home</NuxtLink>
+    <Header></Header>
+    <div class="main">
+      <h1>po {{ id }}</h1>
+      <NuxtLink to="/">home</NuxtLink>
+    </div>
   </div>
 </template>
 <script>
@@ -13,3 +16,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.main{
+  margin-top: 100px;
+}
+</style>

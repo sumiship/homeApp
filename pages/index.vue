@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Header></Header>
     <div class="main">
       <div
         class="item"
@@ -7,54 +8,78 @@
         :key="post.id"
         @click="$router.push('show/' + post.id)"
       >
-        <h3 class="title">{{ post.name }}</h3>
-        <img
-          width="260px"
-          :src="require(`~/assets/img/` + post.image_id)"
-          alt=""
-        />
-        <a :href="post.url" target="_blank">アプリへ</a>
+        <h3 class="title">
+          <span>{{ post.name }}</span>
+        </h3>
+        <div class="post_img">
+          <img
+            width="260px"
+            :src="require(`~/assets/img/` + post.image_id)"
+            alt=""
+          />
+        </div>
+        <div class="link">
+          <a :href="post.url" target="_blank">アプリへ</a>
+        </div>
       </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script> -->
-    <!-- <script>
-      bubbly();
-    </script> -->
   </div>
 </template>
 
 <script>
-// import bubbly from "https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg";
 export default {
   data() {
     return {
       posts: this.$store.state.posts
     };
-  },
-  methods: {
-    page(id) {
-      this.$router.push;
-    }
   }
 };
 </script>
 <style scoped>
 .main {
+  margin-top: 100px;
   display: flex;
 }
 .item {
   width: 300px;
-  height: 400px;
+  height: 420px;
   background-color: bisque;
   border: coral 1px solid;
   border-radius: 10px;
   margin: 20px;
+  cursor: pointer;
 }
 img {
-  display: block;
-  margin: 0 auto;
+  vertical-align: middle;
 }
 .title {
   text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 25px;
+}
+.title span {
+  background-color: lightsalmon;
+  padding: 0 4px;
+  border-radius: 10px;
+}
+.post_img {
+  width: 270px;
+  height: 340px;
+  /* background-color: rgb(238, 226, 213); */
+  margin: 0 auto;
+  text-align: center;
+  line-height: 340px;
+}
+.link{
+  text-align: center;
+  line-height: 40px;
+}
+.link a {
+  text-decoration: none;
+  background-color: tomato;
+  font-size: 17px;
+  padding:3px;
+  border-radius: 7px;
 }
 </style>
