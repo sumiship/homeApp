@@ -14,9 +14,9 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "Koki Osumiのページ" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "~/favicon.ico" }],
     script: [
       {
         src: "https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js",

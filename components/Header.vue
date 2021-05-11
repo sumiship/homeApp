@@ -3,7 +3,7 @@
     <div class="logo">
       <img
         @click="$router.push('/')"
-        height="140px"
+        height="100px"
         :src="require(`~/assets/img/logo_transparent.png`)"
         alt=""
       />
@@ -25,8 +25,14 @@
   top: 0;
   background-color: cornsilk;
 }
-.header img {
+.logo {
   cursor: pointer;
+}
+.header img{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -15px;
 }
 .nav {
 }
