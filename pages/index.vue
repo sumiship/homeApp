@@ -50,6 +50,9 @@
   text-align: center;
   background-color: rgba(244, 165, 96, 0.671);
   border-radius: 50%;
+  color:palevioletred;
+  font-weight:900;
+
 }
 @media screen and (max-width: 650px) {
   .introduction {
