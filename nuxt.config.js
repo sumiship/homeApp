@@ -60,6 +60,14 @@ export default {
   },
 
   generate: {
-    routes: ["show/1", "show/2", "show/3", "show/4", "show/5"] //Compromise Can't use [for, while...]
+    routes: [
+      "show/1",
+      "show/2",
+      "show/3",
+      "show/4",
+      "show/5",
+      "show/6",
+      "show/7"
+    ] //Compromise Can't use [for, while...]
   }
 };

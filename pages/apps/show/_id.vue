@@ -3,7 +3,7 @@
     <Header></Header>
     <div class="main">
       <h1>po {{ id }}</h1>
-      <NuxtLink to="/">home</NuxtLink>
+      <NuxtLink to="../home">home</NuxtLink>
     </div>
   </div>
 </template>
