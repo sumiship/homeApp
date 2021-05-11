@@ -32,8 +32,7 @@ export default {
 </script>
 <style scoped>
 .main {
-  margin-top: 100px;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
