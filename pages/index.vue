@@ -11,6 +11,10 @@
         <a :href="post.url" target="_blank">アプリへ</a>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <!-- <script>
+      bubbly();
+    </script> -->
   </div>
 </template>
 
@@ -25,6 +29,9 @@ export default {
     test() {
       console.log(Object.keys(this.posts).length);
     }
+  },
+  mounted: function() {
+    bubbly();
   }
 };
 </script>
