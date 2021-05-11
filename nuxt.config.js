@@ -16,7 +16,13 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [
+      {
+        src: "https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js",
+        body: true
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -54,6 +60,6 @@ export default {
   },
 
   generate: {
-    routes: ["po/1", "po/2", "po/3", "po/4", "po/5"]//Compromise Can't use [for, while...]
+    routes: ["show/1", "show/2", "show/3", "show/4", "show/5"] //Compromise Can't use [for, while...]
   }
 };

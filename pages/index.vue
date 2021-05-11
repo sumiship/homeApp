@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <div class="main">
-      <div class="item" v-for="post in posts" :key="post.id">
+      <div
+        class="item"
+        v-for="post in posts"
+        :key="post.id"
+        @click="$router.push('show/' + post.id)"
+      >
         <h3 class="title">{{ post.name }}</h3>
         <img
           width="260px"
@@ -11,7 +16,7 @@
         <a :href="post.url" target="_blank">アプリへ</a>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script> -->
     <!-- <script>
       bubbly();
     </script> -->
@@ -19,6 +24,7 @@
 </template>
 
 <script>
+// import bubbly from "https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg";
 export default {
   data() {
     return {
@@ -26,12 +32,9 @@ export default {
     };
   },
   methods: {
-    test() {
-      console.log(Object.keys(this.posts).length);
+    page(id) {
+      this.$router.push;
     }
-  },
-  mounted: function() {
-    bubbly();
   }
 };
 </script>
