@@ -1,22 +1,13 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <NuxtLink to="pe">Go to [pe]</NuxtLink>
-      <NuxtLink to="po/3">Go to [po]</NuxtLink>
-      <h1 class="title">
-        homeAppofffo
-      </h1>
-    </div>
-    <div>
-      {{ posts }}
-      <br />
-      <button @click="test()">test</button>
-    </div>
     <div class="main">
       <div class="item" v-for="post in posts" :key="post.id">
         <h3 class="title">{{ post.name }}</h3>
-        <img width="260px" :src="'/img/' + post.image_id" alt="" />
+        <img
+          width="260px"
+          :src="require(`~/assets/img/` + post.image_id)"
+          alt=""
+        />
         <a :href="post.url" target="_blank">アプリへ</a>
       </div>
     </div>
@@ -53,7 +44,7 @@ img {
   display: block;
   margin: 0 auto;
 }
-.title{
-  text-align:center;
+.title {
+  text-align: center;
 }
 </style>
