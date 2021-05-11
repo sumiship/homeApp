@@ -1,89 +1,75 @@
 <template>
-  <div class="container">
+  <div>
     <Header></Header>
     <div class="main">
-      <div
-        class="item"
-        v-for="post in posts"
-        :key="post.id"
-        @click="$router.push('show/' + post.id)"
-      >
-        <h3 class="title">
-          <span>{{ post.name }}</span>
-        </h3>
-        <div class="post_img">
-          <img
-            width="260px"
-            :src="require(`~/assets/img/` + post.image_id)"
-            alt=""
-          />
-        </div>
-        <div class="link">
-          <a :href="post.url" target="_blank">アプリへ</a>
+      <div class="introduction">
+        <h1>大住航希</h1>
+        <h3>Koki Osumi</h3>
+        <div class="links">
+          <a href="https://www.instagram.com/osumi_koki/" target="blank"
+            >Instagram</a
+          >
+          <a href="https://github.com/sumiship" target="blank">GitHub</a>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      posts: this.$store.state.posts
-    };
-  }
-};
-</script>
 <style scoped>
 .main {
   margin-top: 100px;
+  height: 90vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-.item {
-  width: 300px;
-  height: 420px;
-  background-color: bisque;
-  border: coral 1px solid;
-  border-radius: 10px;
-  margin: 20px;
-  cursor: pointer;
+.introduction {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(188, 143, 143, 0.39);
+  padding-top: 40px;
 }
-img {
-  vertical-align: middle;
-  height:340px;
-  object-fit: contain;
-}
-.title {
+.introduction h1 {
   text-align: center;
-  height: 40px;
-  line-height: 40px;
-  font-size: 25px;
+  font-size: 80px;
 }
-.title span {
-  background-color: lightsalmon;
-  padding: 0 4px;
-  border-radius: 10px;
-}
-.post_img {
-  width: 270px;
-  height: 340px;
-  /* background-color: rgb(238, 226, 213); */
-  margin: 0 auto;
+.introduction h3 {
   text-align: center;
-  line-height: 340px;
+  font-size: 40px;
 }
-.link{
-  text-align: center;
-  line-height: 40px;
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
 }
-.link a {
+.links a {
+  display: block;
   text-decoration: none;
-  background-color: tomato;
-  font-size: 17px;
-  padding:3px;
-  border-radius: 7px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  background-color: rgba(244, 165, 96, 0.671);
+  border-radius: 50%;
+}
+@media screen and (max-width: 650px) {
+  .introduction {
+    width: 250px;
+    height: 250px;
+  }
+  .introduction h1{
+    font-size: 30px;
+  }
+  .introduction h3{
+    font-size: 15px;
+  }
+  .links{
+    margin-top: 30px;
+  }
+  .links a{
+    width:80px;
+    height:80px;
+    line-height:80px;
+  }
 }
 </style>

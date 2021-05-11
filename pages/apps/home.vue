@@ -53,7 +53,7 @@ export default {
 }
 img {
   vertical-align: middle;
-  height:340px;
+  height: 340px;
   object-fit: contain;
 }
 .title {
@@ -75,7 +75,7 @@ img {
   text-align: center;
   line-height: 340px;
 }
-.link{
+.link {
   text-align: center;
   line-height: 40px;
 }
@@ -83,7 +83,7 @@ img {
   text-decoration: none;
   background-color: tomato;
   font-size: 17px;
-  padding:3px;
+  padding: 3px;
   border-radius: 7px;
 }
 </style>
