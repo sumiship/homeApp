@@ -6,7 +6,7 @@
         class="item"
         v-for="post in posts"
         :key="post.id"
-        @click="$router.push('show/' + post.id)"
+        @click="$router.push('/apps/show/' + post.id)"
       >
         <h3 class="title">
           <span>{{ post.name }}</span>
