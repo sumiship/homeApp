@@ -56,7 +56,7 @@ export default {
   },
 
   router: {
-    base: "/homeApp/"
+    // base: "/homeApp/"
   },
 
   generate: {
