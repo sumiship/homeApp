@@ -9,31 +9,31 @@ export const state = () => ({
     post2: {
       id: 2,
       name: "yonmokunarabe",
-      url: "https://sumiship.github.io/yonnmokunarabe/",
+      url: "https://awesome-shaw-990521.netlify.app",
       image_id: "post2.png"
     },
     post3: {
       id: 3,
       name: "wordQuiz",
-      url: "https://sumiship.github.io/wordQuiz/",
+      url: "https://trusting-goodall-95ac3a.netlify.app",
       image_id: "post3.png"
     },
     post4: {
       id: 4,
       name: "地雷処理FPS",
-      url: "https://sumiship.github.io/fpsGame/",
+      url: "https://distracted-keller-603f76.netlify.app",
       image_id: "post4.png"
     },
     post5: {
       id: 5,
       name: "脳トレアクション",
-      url: "https://sumiship.github.io/ActionGame/",
+      url: "https://serene-poincare-bd542a.netlify.app",
       image_id: "post5.png"
     },
     post6: {
       id: 6,
       name: "走り記録する",
-      url: "https://sumiship.github.io/rundatas/",
+      url: "https://competent-shockley-d25fd1.netlify.app",
       image_id: "post6.png"
     }
   }
