@@ -35,6 +35,12 @@ export const state = () => ({
       name: "走り記録する",
       url: "https://competent-shockley-d25fd1.netlify.app",
       image_id: "post6.png"
+    },
+    post7: {
+      id: 7,
+      name: "五目並べ",
+      url: "https://gifted-neumann-7b5a00.netlify.app",
+      image_id: "post7.png"
     }
   }
 });
