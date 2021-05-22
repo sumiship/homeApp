@@ -41,6 +41,12 @@ export const state = () => ({
       name: "五目並べ",
       url: "https://gifted-neumann-7b5a00.netlify.app",
       image_id: "post7.png"
-    }
+    },
+    post8: {
+      id: 8,
+      name: "vueコンポーネント",
+      url: "https://brave-austin-f5efbf.netlify.app/",
+      image_id: "post8.png"
+    },
   }
 });
