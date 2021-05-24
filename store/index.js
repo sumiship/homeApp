@@ -48,5 +48,11 @@ export const state = () => ({
       url: "https://brave-austin-f5efbf.netlify.app/",
       image_id: "post8.png"
     },
+    post9: {
+      id: 9,
+      name: "オセロ",
+      url: "https://suspicious-mcclintock-b3756e.netlify.app/",
+      image_id: "post9.png"
+    },
   }
 });
