@@ -54,5 +54,11 @@ export const state = () => ({
       url: "https://suspicious-mcclintock-b3756e.netlify.app/",
       image_id: "post9.png"
     },
+    post10: {
+      id: 10,
+      name: "五目並べ（オンライン対戦）",
+      url: "https://friendly-golick-4bc7f8.netlify.app/",
+      image_id: "post10.png"
+    },
   }
 });
