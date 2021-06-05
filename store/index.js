@@ -56,9 +56,15 @@ export const state = () => ({
     },
     post10: {
       id: 10,
-      name: "五目並べ（オンライン対戦）",
+      name: "五目並べ(オンライン)",
       url: "https://friendly-golick-4bc7f8.netlify.app/",
       image_id: "post10.png"
+    },
+    post11: {
+      id: 11,
+      name: "カード合わせ",
+      url: "https://lucid-pare-ac3884.netlify.app/",
+      image_id: "post11.png"
     },
   }
 });

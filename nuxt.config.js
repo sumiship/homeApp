@@ -71,6 +71,9 @@ export default {
       "apps/show/8",
       "apps/show/9",
       "apps/show/10",
+      "apps/show/11",
+      "apps/show/12",
+      "apps/show/13",
     ] //Compromise Can't use [for, while...]
   }
 };
