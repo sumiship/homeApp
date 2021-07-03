@@ -66,5 +66,11 @@ export const state = () => ({
       url: "https://lucid-pare-ac3884.netlify.app/",
       image_id: "post11.png"
     },
+    post12: {
+      id: 12,
+      name: "感染検査目安",
+      url: "https://lucid-pare-ac3884.netlify.app/",
+      image_id: "post12.png"
+    }
   }
 });
