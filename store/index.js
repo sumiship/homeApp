@@ -69,7 +69,7 @@ export const state = () => ({
     post12: {
       id: 12,
       name: "感染検査目安",
-      url: "https://lucid-pare-ac3884.netlify.app/",
+      url: "https://angry-cray-163443.netlify.app/",
       image_id: "post12.png"
     }
   }
