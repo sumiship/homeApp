@@ -71,6 +71,12 @@ export const state = () => ({
       name: "感染検査目安",
       url: "https://angry-cray-163443.netlify.app/",
       image_id: "post12.png"
+    },
+    post13: {
+      id: 13,
+      name: "席替えアプリ",
+      url: "https://distracted-knuth-3ee1ad.netlify.app/",
+      image_id: "post13.png"
     }
   }
 });
