@@ -77,6 +77,12 @@ export const state = () => ({
       name: "席替えアプリ",
       url: "https://distracted-knuth-3ee1ad.netlify.app/",
       image_id: "post13.png"
+    },
+    post14: {
+      id: 14,
+      name: "公開鍵アプリ",
+      url: "https://loving-easley-949247.netlify.app/",
+      image_id: "post14.png"
     }
   }
 });
