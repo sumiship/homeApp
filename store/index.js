@@ -89,6 +89,24 @@ export const state = () => ({
       name: "席替えアプリ2",
       url: "https://dreamy-engelbart-bf2394.netlify.app",
       image_id: "post15.png"
+    },
+    post16: {
+      id: 16,
+      name: "重力4目ならべ",
+      url: "https://epic-bell-dec45c.netlify.app",
+      image_id: "post16.png"
+    },
+    post17: {
+      id: 17,
+      name: "ソート見える",
+      url: "https://kind-easley-80944e.netlify.app/",
+      image_id: "post17.png"
+    },
+    post18: {
+      id: 18,
+      name: "迷路自動",
+      url: "https://happy-poitras-b31c57.netlify.app",
+      image_id: "post18.png"
     }
   }
 });
